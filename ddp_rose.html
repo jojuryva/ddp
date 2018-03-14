@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Dominio de Pontas｜Hvidvin</title>
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <link rel="icon" href="images/favicon.png" type="image/png"/>
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/ddp.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- i <body> har man alt indhold på siden -->
+<body>
+    <div class="rose_cvr">
+        <div class="logo_box">
+            <img class="logo_mbl" src="images/ddp_logo_mbl.png">
+            <img class="logo_web" src="images/ddp_logo_web.png">
+        </div>
+        <div id="navMobileRose" class="drp_box">
+            <i id="navBars" class="drp_btn fas fa-bars fa-3x"></i>
+            <div id="navElements">
+                <a href="ddp_red.html">Rødvin</a>
+                <a href="ddp_white.html">Hvidvin</a>
+                <a href="ddp_rose.html">Rosévin</a>
+            </div>
+        </div>
+    </div>
+    <div id="rose_pop_box">
+        <h1>
+            hjsgadjwhag
+        </h1>
+        <p>
+            hdskjfhsdf? Ihjsdhja! JKhsjadf. JHASdj haksjhda kjshdaus ghgdfjsdg. hafijs hkuedhf sjdhfjhjh, jsadjahgs jhdasdhas.
+            ajhskdj ahsk djhas kjdha ksd! aug shjd asd? jhksaj hgfs jdgfh djk ash jfk, ajh sdkja hskjd ha ksd, asj khdka jhsdakjsd.
+        </p>
+    </div>
+    <img id="rose_zoom_1" class="rose_zoom" src="images/ddp_label_zoom_1_rose.jpg" width="992px">
+    <div id="rose_info_box_1" class="rose_info_box">
+        <h1>
+            hjsgadjwhag
+        </h1>
+        <p>
+            hdskjfhsdf? Ihjsdhja! JKhsjadf. JHASdj haksjhda kjshdaus ghgdfjsdg. hafijs hkuedhf sjdhfjhjh, jsadjahgs jhdasdhas.
+            ajhskdj ahsk djhas kjdha ksd! aug shjd asd? jhksaj hgfs jdgfh djk ash jfk, ajh sdkja hskjd ha ksd, asj khdka jhsdakjsd.
+        </p>
+    </div>
+    <img id="rose_zoom_2" class="rose_zoom" src="images/ddp_label_zoom_2_rose.jpg" width="992px">
+    <div id="rose_info_box_2" class="rose_info_box">
+        <h1>
+            hjsgadjwhag
+        </h1>
+        <p>
+            hdskjfhsdf? Ihjsdhja! JKhsjadf. JHASdj haksjhda kjshdaus ghgdfjsdg. hafijs hkuedhf sjdhfjhjh, jsadjahgs jhdasdhas.
+            ajhskdj ahsk djhas kjdha ksd! aug shjd asd? jhksaj hgfs jdgfh djk ash jfk, ajh sdkja hskjd ha ksd, asj khdka jhsdakjsd.
+        </p>
+    </div>
+    <img id="rose_zoom_3" class="rose_zoom" src="images/ddp_label_zoom_3_rose.jpg" width="992px">
+    <div id="rose_info_box_3" class="rose_info_box">
+        <h1>
+            hjsgadjwhag
+        </h1>
+        <p>
+            hdskjfhsdf? Ihjsdhja! JKhsjadf. JHASdj haksjhda kjshdaus ghgdfjsdg. hafijs hkuedhf sjdhfjhjh, jsadjahgs jhdasdhas.
+            ajhskdj ahsk djhas kjdha ksd! aug shjd asd? jhksaj hgfs jdgfh djk ash jfk, ajh sdkja hskjd ha ksd, asj khdka jhsdakjsd.
+        </p>
+    </div>
+    <div id="ftr">
+        <a href="https://www.facebook.com/">
+            <i class="fab fa-facebook-square fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/">
+            <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="https://www.pinterest.dk/">
+            <i class="fab fa-pinterest-square fa-3x"></i>
+        </a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+
+            $("#navMobileRose").click(function (e) {
+                $("#navElements").slideToggle(500);
+            });
+
+            $(window).resize(function (e) {
+                var width = $(window).width();
+
+                if(width > 768) {
+                    $("#navElements").css({"display":"-webkit-flex", "display":"flex"});
+                } else {
+                    $("#navElements").css("display", "none");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
