@@ -31,6 +31,38 @@ img {
   max-width: 100%;
   height: auto; }
 
+#tsr_body, #error_body {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr); }
+
+.tsr_bnr {
+  height: 100vh;
+  background-color: #6d2851;
+  grid-column: 3/span 1;
+  grid-row: 1/span 1; }
+  .tsr_bnr img {
+    width: 80%;
+    margin: 10% auto; }
+  .tsr_bnr p {
+    margin: 5% 10%;
+    font-size: 14pt; }
+  .tsr_bnr a {
+    text-decoration: none; }
+    .tsr_bnr a button {
+      background-color: #6d2851;
+      border: solid white 3px;
+      font-family: Montserrat, sans-serif;
+      font-size: 14pt;
+      width: 50%;
+      margin: 5% 25%;
+      padding: 2.5%;
+      cursor: pointer;
+      color: white; }
+      .tsr_bnr a button:hover {
+        background-color: white;
+        color: #6d2851; }
+
 .red_cvr {
   background-image: url("../images/cvr.jpg");
   background-repeat: no-repeat;
@@ -60,7 +92,7 @@ img {
   display: none; }
 
 .drp_btn {
-  margin: 5% 45%; }
+  margin: 5% 44% 5% 44%; }
 
 .drp_box {
   position: relative; }
@@ -70,12 +102,13 @@ img {
   height: 50px;
   width: auto;
   color: white; }
+  #navMobileRed #navBars {
+    cursor: pointer; }
   #navMobileRed #navElements {
     display: none;
     position: absolute;
     width: 100%;
-    z-index: 100;
-    border: solid white 3px; }
+    z-index: 100; }
     #navMobileRed #navElements a {
       display: block;
       line-height: 50px;
@@ -83,7 +116,7 @@ img {
       width: 100%;
       text-align: center;
       text-decoration: none;
-      background-color: #481a35;
+      background-color: #6d2851;
       color: white;
       font-size: 16px; }
       #navMobileRed #navElements a:hover {
@@ -101,8 +134,7 @@ img {
     display: none;
     position: absolute;
     width: 100%;
-    z-index: 100;
-    border: solid white 3px; }
+    z-index: 100; }
     #navMobileWhite #navElements a {
       display: block;
       line-height: 50px;
@@ -110,7 +142,7 @@ img {
       width: 100%;
       text-align: center;
       text-decoration: none;
-      background-color: #f7891a;
+      background-color: #f9a24b;
       color: white;
       font-size: 16px; }
       #navMobileWhite #navElements a:hover {
@@ -128,8 +160,7 @@ img {
     display: none;
     position: absolute;
     width: 100%;
-    z-index: 100;
-    border: solid white 3px; }
+    z-index: 100; }
     #navMobileRose #navElements a {
       display: block;
       line-height: 50px;
@@ -137,7 +168,7 @@ img {
       width: 100%;
       text-align: center;
       text-decoration: none;
-      background-color: #277fb6;
+      background-color: #3b9ad5;
       color: white;
       font-size: 16px; }
       #navMobileRose #navElements a:hover {
@@ -207,10 +238,38 @@ img {
   padding: 40% 20%;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-evenly; }
   #ftr a {
+    margin: 5%;
+    width: 50px;
+    height: 50px;
     text-decoration: none;
     color: white; }
+  #ftr #topRed {
+    color: #6d2851;
+    cursor: pointer; }
+  #ftr #topWhite {
+    color: #f9a24b;
+    cursor: pointer; }
+  #ftr #topRose {
+    color: #3b9ad5;
+    cursor: pointer; }
+
+#errorBox {
+  background-color: #6d2851;
+  width: 100vw;
+  height: 100vh;
+  padding: 50% 25%; }
+  #errorBox h1 {
+    text-align: center;
+    font-size: 24pt;
+    margin: 25% 0; }
+  #errorBox p {
+    text-align: center;
+    margin: 25% 0;
+    font-size: 12pt; }
+    #errorBox p a {
+      color: white; }
 
 @media screen and (min-width: 768px) {
   .logo_mbl {
@@ -221,6 +280,8 @@ img {
     margin: 10% 47%; }
 
   #navMobileRed #navElements a, #navMobileWhite #navElements a, #navMobileRose #navElements a {
+    line-height: 75px;
+    height: 75px;
     font-size: 32pt; }
 
   #red_pop_box, .red_info_box, #white_pop_box, .white_info_box, #rose_pop_box, .rose_info_box {
@@ -229,11 +290,55 @@ img {
       font-size: 56pt; }
     #red_pop_box p, .red_info_box p, #white_pop_box p, .white_info_box p, #rose_pop_box p, .rose_info_box p {
       font-size: 28pt;
-      margin-top: 5%; } }
+      margin-top: 5%; }
+
+  #errorBox {
+    padding: 25%; }
+    #errorBox h1 {
+      font-size: 40pt; }
+    #errorBox p {
+      font-size: 20pt; } }
 @media screen and (min-width: 992px) {
   body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(17, 1fr); }
+
+  #tsr_body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr); }
+
+  .tsr_bkg {
+    background: url("../images/tsr_cvr.jpg"), no-repeat;
+    background-size: cover;
+    grid-column: 1/span 2;
+    grid-row: 1/span 1; }
+
+  .tsr_bnr {
+    height: 100vh;
+    background-color: #6d2851;
+    grid-column: 3/span 1;
+    grid-row: 1/span 1; }
+    .tsr_bnr img {
+      width: 80%;
+      margin: 10% auto; }
+    .tsr_bnr p {
+      margin: 5% 10%;
+      font-size: 14pt; }
+    .tsr_bnr a {
+      text-decoration: none; }
+      .tsr_bnr a button {
+        background-color: #6d2851;
+        border: solid white 3px;
+        font-family: Montserrat, sans-serif;
+        font-size: 14pt;
+        width: 50%;
+        margin: 5% 25%;
+        padding: 2.5%;
+        cursor: pointer;
+        color: white; }
+        .tsr_bnr a button:hover {
+          background-color: white;
+          color: #6d2851; }
 
   .red_cvr, .white_cvr, .rose_cvr {
     padding: 2.5% 2.5% 0 2.5%;
@@ -313,46 +418,20 @@ img {
   #ftr {
     grid-column: 1/span 3;
     grid-row: 16/span 2;
-    padding: 8.5% 25%; } }
+    padding: 6.5% 25%; }
+
+  #errorBox {
+    padding: 10%; }
+    #errorBox img {
+      width: 50%;
+      margin: auto; }
+    #errorBox h1 {
+      font-size: 40pt;
+      margin: 10% 0; }
+    #errorBox p {
+      font-size: 20pt;
+      margin: 10% 0; } }
 @media screen and (min-width: 1200px) {
-  #tsr_body {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr); }
-
-  .tsr_bkg {
-    background: url("../images/tsr_cvr.jpg"), no-repeat;
-    background-size: cover;
-    grid-column: 1/span 2;
-    grid-row: 1/span 1; }
-
-  .tsr_bnr {
-    height: 100vh;
-    background-color: #6d2851;
-    grid-column: 3/span 1;
-    grid-row: 1/span 1; }
-    .tsr_bnr img {
-      width: 80%;
-      margin: 10% auto; }
-    .tsr_bnr p {
-      margin: 5% 10%;
-      font-size: 14pt; }
-    .tsr_bnr a {
-      text-decoration: none; }
-      .tsr_bnr a button {
-        background-color: #6d2851;
-        border: solid white 3px;
-        font-family: Montserrat, sans-serif;
-        font-size: 14pt;
-        width: 50%;
-        margin: 5% 25%;
-        padding: 2.5%;
-        cursor: pointer;
-        color: white; }
-        .tsr_bnr a button:hover {
-          background-color: white;
-          color: #6d2851; }
-
   #navMobileRed #navElements, #navMobileWhite #navElements, #navMobileRose #navElements {
     margin-left: -250%;
     width: 250px; }
@@ -372,7 +451,19 @@ img {
     .red_info_box h1, .white_info_box h1, .rose_info_box h1 {
       font-size: 32pt; }
     .red_info_box p, .white_info_box p, .rose_info_box p {
-      font-size: 18pt; } }
+      font-size: 18pt; }
+
+  #errorBox {
+    padding: 5%; }
+    #errorBox img {
+      width: 25%;
+      margin: auto; }
+    #errorBox h1 {
+      font-size: 40pt;
+      margin: 5% 0; }
+    #errorBox p {
+      font-size: 20pt;
+      margin: 5% 0; } }
 @media screen and (min-width: 1400px) {
   #red_pop_box, #white_pop_box, #rose_pop_box {
     padding: 15%; }

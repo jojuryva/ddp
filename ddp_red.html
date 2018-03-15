@@ -85,13 +85,16 @@
         <a href="https://www.pinterest.dk/">
             <i class="fab fa-pinterest-square fa-3x"></i>
         </a>
+        <a id="topRed">
+            <i class="fas fa-arrow-up fa-3x"></i>
+        </a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         $(document).ready(function (e) {
 
             $("#navMobileRed").click(function (e) {
-                $("#navElements").slideToggle(500);
+                $("#navElements").slideToggle(250);
             });
 
             $(window).resize(function (e) {
@@ -102,6 +105,12 @@
                 } else {
                     $("#navElements").css("display", "none");
                 }
+            });
+
+            $('#topRed').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 500);
             });
         });
     </script>
