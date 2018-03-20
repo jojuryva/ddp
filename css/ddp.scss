@@ -101,27 +101,31 @@ img {
 }
 
 .red_cvr {
-  background-image: url("../images/cvr.jpg");
-  background-repeat: no-repeat;
   height: 375px;
   width: 375px;
   padding: 10% 0;
+  min-height: 375px;
+  background: transparent;
 }
 
 .white_cvr {
-  background-image: url("../images/cvr2.jpg");
-  background-repeat: no-repeat;
   height: 375px;
   width: 375px;
   padding: 10% 0;
+  min-height: 375px;
+  background: transparent;
 }
 
 .rose_cvr {
-  background-image: url("../images/cvr3.jpg");
-  background-repeat: no-repeat;
   height: 375px;
   width: 375px;
   padding: 10% 0;
+  min-height: 375px;
+  background: transparent;
+}
+
+.logo_box {
+  display: none;
 }
 
 .logo_mbl {
@@ -375,6 +379,7 @@ img {
   .red_cvr, .white_cvr, .rose_cvr {
     height: 768px;
     width: 768px;
+    min-height: 768px;
   }
 
   #grid2 {
@@ -406,6 +411,11 @@ img {
     h1 {
       font-size: 40pt;
     }
+
+    h2 {
+      font-size: 32pt;
+    }
+
     p {
       font-size: 20pt;
       margin-top: 5%;
@@ -493,6 +503,7 @@ img {
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    min-height: 50vh;
   }
 
   .logo_mbl {
@@ -555,7 +566,7 @@ img {
   .red_info_box, .white_info_box, .rose_info_box {
     padding: 10%;
 
-    h1 {
+    h2 {
       font-size: 24pt;
     }
 
@@ -646,7 +657,7 @@ img {
   }
 
   .red_info_box, .white_info_box, .rose_info_box {
-
+    padding: 5% 10%;
     h1{
       font-size: 32pt;
     }
@@ -654,6 +665,10 @@ img {
     p {
       font-size: 18pt;
     }
+  }
+
+  #ftr {
+    padding: 10% 25%;
   }
 
   #errorBox {
@@ -673,17 +688,6 @@ img {
       font-size: 20pt;
       margin: 5% 0;
     }
-  }
-}
-
-@media screen and (min-width: 1400px) {
-
-  #red_pop_box, #white_pop_box, #rose_pop_box {
-    padding: 15%;
-  }
-
-  .red_info_box, .white_info_box, .rose_info_box  {
-    padding: 12.5%;
   }
 }
 

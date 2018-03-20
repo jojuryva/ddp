@@ -61,25 +61,28 @@ img {
         color: #6d2851; }
 
 .red_cvr {
-  background-image: url("../images/cvr.jpg");
-  background-repeat: no-repeat;
   height: 375px;
   width: 375px;
-  padding: 10% 0; }
+  padding: 10% 0;
+  min-height: 375px;
+  background: transparent; }
 
 .white_cvr {
-  background-image: url("../images/cvr2.jpg");
-  background-repeat: no-repeat;
   height: 375px;
   width: 375px;
-  padding: 10% 0; }
+  padding: 10% 0;
+  min-height: 375px;
+  background: transparent; }
 
 .rose_cvr {
-  background-image: url("../images/cvr3.jpg");
-  background-repeat: no-repeat;
   height: 375px;
   width: 375px;
-  padding: 10% 0; }
+  padding: 10% 0;
+  min-height: 375px;
+  background: transparent; }
+
+.logo_box {
+  display: none; }
 
 .logo_mbl {
   margin: 0 auto;
@@ -267,7 +270,8 @@ img {
 @media screen and (min-width: 768px) {
   .red_cvr, .white_cvr, .rose_cvr {
     height: 768px;
-    width: 768px; }
+    width: 768px;
+    min-height: 768px; }
 
   #grid2 {
     grid-template-columns: repeat(1, 768px);
@@ -287,6 +291,8 @@ img {
 
   #red_pop_box h1, .red_info_box h1, #white_pop_box h1, .white_info_box h1, #rose_pop_box h1, .rose_info_box h1 {
     font-size: 40pt; }
+  #red_pop_box h2, .red_info_box h2, #white_pop_box h2, .white_info_box h2, #rose_pop_box h2, .rose_info_box h2 {
+    font-size: 32pt; }
   #red_pop_box p, .red_info_box p, #white_pop_box p, .white_info_box p, #rose_pop_box p, .rose_info_box p {
     font-size: 20pt;
     margin-top: 5%; }
@@ -348,7 +354,8 @@ img {
     width: 100vw;
     background-size: cover;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 50vh; }
 
   .logo_mbl {
     display: none; }
@@ -394,7 +401,7 @@ img {
 
   .red_info_box, .white_info_box, .rose_info_box {
     padding: 10%; }
-    .red_info_box h1, .white_info_box h1, .rose_info_box h1 {
+    .red_info_box h2, .white_info_box h2, .rose_info_box h2 {
       font-size: 24pt; }
     .red_info_box p, .white_info_box p, .rose_info_box p {
       font-size: 16pt; }
@@ -453,10 +460,15 @@ img {
     #red_pop_box p, #white_pop_box p, #rose_pop_box p {
       font-size: 18pt; }
 
-  .red_info_box h1, .white_info_box h1, .rose_info_box h1 {
-    font-size: 32pt; }
-  .red_info_box p, .white_info_box p, .rose_info_box p {
-    font-size: 18pt; }
+  .red_info_box, .white_info_box, .rose_info_box {
+    padding: 5% 10%; }
+    .red_info_box h1, .white_info_box h1, .rose_info_box h1 {
+      font-size: 32pt; }
+    .red_info_box p, .white_info_box p, .rose_info_box p {
+      font-size: 18pt; }
+
+  #ftr {
+    padding: 10% 25%; }
 
   #errorBox {
     padding: 5%; }
@@ -469,11 +481,5 @@ img {
     #errorBox p {
       font-size: 20pt;
       margin: 5% 0; } }
-@media screen and (min-width: 1400px) {
-  #red_pop_box, #white_pop_box, #rose_pop_box {
-    padding: 15%; }
-
-  .red_info_box, .white_info_box, .rose_info_box {
-    padding: 12.5%; } }
 
 /*# sourceMappingURL=ddp.css.map */
