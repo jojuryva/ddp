@@ -313,8 +313,11 @@ img {
     color: #3b9ad5;
     cursor: pointer; }
 
+#error_body {
+  background-color: #6d2851; }
+
 #errorBox {
-  background-color: #6d2851;
+  display: none;
   width: 100vw;
   height: 100vh;
   padding: 50% 25%; }

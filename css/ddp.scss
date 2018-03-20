@@ -425,8 +425,12 @@ img {
   }
 }
 
+#error_body {
+  background-color: $red;
+}
+
 #errorBox {
-  background-color: #6d2851;
+  display: none;
   width: 100vw;
   height: 100vh;
   padding: 50% 25%;
