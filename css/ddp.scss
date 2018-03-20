@@ -96,82 +96,81 @@ img {
         background-color: white;
         color: $red;
       }
+    }
+    .line {
+      background-color: $red;
+      border: solid white 3px;
+      color: white;
+      cursor: pointer;
+      display: block;
+      float: left;
+      font-family: Montserrat, sans-serif;
+      font-size: 14pt;
+      height: 70px;
+      width: 50%;
+      margin: 5% 25%;
+      padding: 2.5%;
+      line-height: 40px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
 
-      .line {
-        background-color: $red;
-        border: solid white 3px;
-        color: white;
-        cursor: pointer;
-        display: block;
-        float: left;
-        font-family: Montserrat, sans-serif;
-        font-size: 14pt;
-        height: 70px;
-        width: 50%;
-        margin: 5% 25%;
-        padding: 2.5%;
-        line-height: 40px;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
+      &:hover {
+        background-color: white;
+        color: $red;
+      }
+    }
 
-        &:hover {
-          background-color: white;
-          color: $red;
-        }
-      }
+    .line::after {
+      content: " ";
+      border-top: 3px solid $red;
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      left: -150%;
+      transition: left 0.5s, right 0.3s;
+      opacity: 0;
+    }
+    .line::before {
+      border-right: 3px solid $red;
+      border-top: 3px solid $red;
+      content: " ";
+      height: 10px;
+      position: absolute;
+      right: 20%;
+      top: calc(50% - 5px);
+      transform: rotate(45deg) scale(0.2);
+      transition: all 0.5s ease 0s;
+      width: 10px;
+      opacity: 0;
+    }
 
-      .line::after {
-        content: " ";
-        border-top: 3px solid $red;
-        position: absolute;
-        top: 50%;
-        right: 100%;
-        left: -150%;
-        transition: left 0.5s, right 0.3s;
-        opacity: 0;
-      }
-      .line::before {
-        border-right: 3px solid $red;
-        border-top: 3px solid $red;
-        content: " ";
-        height: 10px;
-        position: absolute;
-        right: 20%;
-        top: calc(50% - 5px);
-        transform: rotate(45deg) scale(0.2);
-        transition: all 0.5s ease 0s;
-        width: 10px;
-        opacity: 0;
-      }
-
-      .line span,
-      .line.out span {
-        opacity: 1;
-        transition: 0.5s;
-        transition-delay: 0.1s;
-      }
-      .line.hide-text span {
-        opacity: 0;
-      }
-      .line.in::after {
-        left: 20%;
-        right: 20%;
-        opacity: 1;
-      }
-      .line.in::before {
-        transform: rotate(45deg) scale(1);
-        opacity: 1;
-      }
-      .line.out::before {
-        right: -100%;
-        transition-delay: 0s;
-      }
-      .line.out::after {
-        left: 100%;
-        right: -150%;
-        transition: left 0.3s, right 0.3s;
-      }
+    .line span,
+    .line.out span {
+      opacity: 1;
+      transition: 0.5s;
+      transition-delay: 0.1s;
+    }
+    .line.hide-text span {
+      opacity: 0;
+    }
+    .line.in::after {
+      left: 20%;
+      right: 20%;
+      opacity: 1;
+    }
+    .line.in::before {
+      transform: rotate(45deg) scale(1);
+      opacity: 1;
+    }
+    .line.out::before {
+      right: -100%;
+      transition-delay: 0s;
+    }
+    .line.out::after {
+      left: 100%;
+      right: -150%;
+      transition: left 0.3s, right 0.3s;
     }
   }
 }
