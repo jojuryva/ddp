@@ -45,7 +45,7 @@
             var timeout = null;
             var transitionEnd = true;
 
-            jQuery('.line').on("mouseenter", function() {
+            jQuery('.line').on("mouseenter", function(e) {
                 if (!transitionEnd)
                     return;
 
@@ -53,15 +53,15 @@
 
                 _this.addClass("hide-text");
 
-                timeout = setTimeout(function() {
+                timeout = setTimeout(function(e) {
                     _this.addClass("in");
                 }, 200);
 
                 transitionEnd = false;
-            }).on("mouseleave", function() {
+            }).on("mouseleave", function(e) {
                 clearTimeout(timeout);
 
-                jQuery(this).addClass("out").one("transitionend", function() {
+                jQuery(this).addClass("out").one("transitionend", function(e) {
                     transitionEnd = true;
                     jQuery(this).removeClass("hide-text out in");
                 });
