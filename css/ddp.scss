@@ -34,6 +34,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; // Ingen indre margen fra overskrifter
 }
 
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
 ul, ol {
   margin: 0; // Ingen ydre margen fra lister
   padding: 0; // Ingen indre margen fra lister
@@ -47,6 +55,7 @@ li {
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
+  font-weight: 400;
 }
 
 // Sikrer billeder er responsive
@@ -725,25 +734,25 @@ img {
   }
 
   #red_pop_box, #white_pop_box, #rose_pop_box {
-    padding: 3% 30% 5%;
+    padding: 5% 30% 5%;
 
     h1{
       font-size: 32pt;
     }
 
     p {
-      font-size: 18pt;
+      font-size: 16pt;
     }
   }
 
   .red_info_box, .white_info_box, .rose_info_box {
     padding: 5% 10%;
-    h1{
-      font-size: 32pt;
+    h2{
+      font-size: 24pt;
     }
 
     p {
-      font-size: 18pt;
+      font-size: 16pt;
     }
   }
 

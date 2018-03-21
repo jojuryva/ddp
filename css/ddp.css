@@ -11,6 +11,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
+h1 {
+  font-weight: 700; }
+
+h2 {
+  font-weight: 600; }
+
 ul, ol {
   margin: 0;
   padding: 0;
@@ -21,7 +27,8 @@ li {
 
 p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-weight: 400; }
 
 img {
   display: block;
@@ -519,18 +526,18 @@ img {
       font-size: 12pt; }
 
   #red_pop_box, #white_pop_box, #rose_pop_box {
-    padding: 3% 30% 5%; }
+    padding: 5% 30% 5%; }
     #red_pop_box h1, #white_pop_box h1, #rose_pop_box h1 {
       font-size: 32pt; }
     #red_pop_box p, #white_pop_box p, #rose_pop_box p {
-      font-size: 18pt; }
+      font-size: 16pt; }
 
   .red_info_box, .white_info_box, .rose_info_box {
     padding: 5% 10%; }
-    .red_info_box h1, .white_info_box h1, .rose_info_box h1 {
-      font-size: 32pt; }
+    .red_info_box h2, .white_info_box h2, .rose_info_box h2 {
+      font-size: 24pt; }
     .red_info_box p, .white_info_box p, .rose_info_box p {
-      font-size: 18pt; }
+      font-size: 16pt; }
 
   #ftr {
     padding: 10% 25%; }
