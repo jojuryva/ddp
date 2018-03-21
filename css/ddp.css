@@ -214,28 +214,37 @@ img {
   background-color: #6d2851;
   padding: 25% 10%; }
   #red_pop_box h1, .red_info_box h1 {
+    font-size: 32pt; }
+  #red_pop_box h2, .red_info_box h2 {
     font-size: 24pt; }
   #red_pop_box p, .red_info_box p {
-    font-size: 12pt;
+    font-size: 16pt;
     margin-top: 5%; }
 
 #white_pop_box, .white_info_box {
   background-color: #f9a24b;
   padding: 25% 10%; }
   #white_pop_box h1, .white_info_box h1 {
+    font-size: 32pt; }
+  #white_pop_box h2, .white_info_box h2 {
     font-size: 24pt; }
   #white_pop_box p, .white_info_box p {
-    font-size: 12pt;
+    font-size: 16pt;
     margin-top: 5%; }
 
 #rose_pop_box, .rose_info_box {
   background-color: #3b9ad5;
   padding: 25% 10%; }
   #rose_pop_box h1, .rose_info_box h1 {
+    font-size: 32pt; }
+  #rose_pop_box h2, .rose_info_box h2 {
     font-size: 24pt; }
   #rose_pop_box p, .rose_info_box p {
-    font-size: 12pt;
+    font-size: 16pt;
     margin-top: 5%; }
+
+.red_info_box, .white_info_box, .rose_info_box {
+  padding: 15% 10%; }
 
 #red_pop_box, #white_pop_box, #rose_pop_box {
   grid-row: 1/span 1; }
@@ -327,15 +336,15 @@ img {
   display: none;
   width: 100vw;
   height: 100vh;
-  padding: 50% 25%; }
+  padding: 25%; }
   #errorBox h1 {
     text-align: center;
-    font-size: 24pt;
+    font-size: 32pt;
     margin: 25% 0; }
   #errorBox p {
     text-align: center;
     margin: 25% 0;
-    font-size: 12pt; }
+    font-size: 24pt; }
     #errorBox p a {
       color: white; }
 
@@ -362,19 +371,12 @@ img {
     font-size: 32pt; }
 
   #red_pop_box h1, .red_info_box h1, #white_pop_box h1, .white_info_box h1, #rose_pop_box h1, .rose_info_box h1 {
-    font-size: 40pt; }
+    font-size: 48pt; }
   #red_pop_box h2, .red_info_box h2, #white_pop_box h2, .white_info_box h2, #rose_pop_box h2, .rose_info_box h2 {
     font-size: 32pt; }
   #red_pop_box p, .red_info_box p, #white_pop_box p, .white_info_box p, #rose_pop_box p, .rose_info_box p {
-    font-size: 20pt;
+    font-size: 24pt;
     margin-top: 5%; }
-
-  #errorBox {
-    padding: 25%; }
-    #errorBox h1 {
-      font-size: 40pt; }
-    #errorBox p {
-      font-size: 20pt; }
 
   #ftr {
     height: 768px;
@@ -455,7 +457,7 @@ img {
     #navMobileRed #navElements a, #navMobileWhite #navElements a, #navMobileRose #navElements a {
       line-height: 75px;
       height: 75px;
-      font-size: 12pt; }
+      font-size: 16pt; }
 
   #grid2 {
     display: grid;
@@ -465,14 +467,14 @@ img {
   #red_pop_box, #white_pop_box, #rose_pop_box {
     grid-column: 1/span 3;
     grid-row: 1/span 1;
-    padding: 10%; }
+    padding: 10% 25%; }
     #red_pop_box h1, #white_pop_box h1, #rose_pop_box h1 {
-      font-size: 24pt; }
+      font-size: 32pt; }
     #red_pop_box p, #white_pop_box p, #rose_pop_box p {
       font-size: 16pt; }
 
   .red_info_box, .white_info_box, .rose_info_box {
-    padding: 10%; }
+    padding: 7.5%; }
     .red_info_box h2, .white_info_box h2, .rose_info_box h2 {
       font-size: 24pt; }
     .red_info_box p, .white_info_box p, .rose_info_box p {
@@ -513,10 +515,10 @@ img {
       width: 50%;
       margin: auto; }
     #errorBox h1 {
-      font-size: 40pt;
+      font-size: 32pt;
       margin: 10% 0; }
     #errorBox p {
-      font-size: 20pt;
+      font-size: 24pt;
       margin: 10% 0; } }
 @media screen and (min-width: 1200px) {
   #navMobileRed #navElements, #navMobileWhite #navElements, #navMobileRose #navElements {
@@ -526,7 +528,7 @@ img {
       font-size: 12pt; }
 
   #red_pop_box, #white_pop_box, #rose_pop_box {
-    padding: 5% 30% 5%; }
+    padding: 5% 30%; }
     #red_pop_box h1, #white_pop_box h1, #rose_pop_box h1 {
       font-size: 32pt; }
     #red_pop_box p, #white_pop_box p, #rose_pop_box p {
@@ -548,10 +550,10 @@ img {
       width: 25%;
       margin: auto; }
     #errorBox h1 {
-      font-size: 40pt;
+      font-size: 32pt;
       margin: 5% 0; }
     #errorBox p {
-      font-size: 20pt;
+      font-size: 24pt;
       margin: 5% 0; } }
 
 /*# sourceMappingURL=ddp.css.map */
