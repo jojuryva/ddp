@@ -29,10 +29,21 @@ $blue: #3b9ad5;
 }
 
 body {
-  background-color: $red;
   margin: 0; // Ingen kanter i siden af browser
   font-family: Montserrat, sans-serif;
   color: white;
+}
+
+#body_red {
+  background-color: $red;
+}
+
+#body_white {
+ background-color: $orange;
+}
+
+#body_rose {
+  background-color: $blue;
 }
 
 h1, h2, h3, h4, h5, h6 {

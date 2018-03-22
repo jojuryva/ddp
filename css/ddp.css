@@ -3,10 +3,18 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #6d2851;
   margin: 0;
   font-family: Montserrat, sans-serif;
   color: white; }
+
+#body_red {
+  background-color: #6d2851; }
+
+#body_white {
+  background-color: #f9a24b; }
+
+#body_rose {
+  background-color: #3b9ad5; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;

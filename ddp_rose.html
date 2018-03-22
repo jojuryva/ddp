@@ -15,6 +15,12 @@
     <meta name="copyright" content="Information om copyright">
     <meta name="description" content="Her kan du læse om Dominio de Pontas' søde og lette spanske Garnacha, med duftnoter af frugt og bær.">
     <meta name="keywords" content="rosévin, mad og vin, mørbrad retter">
+    <meta property="og:title" content="Dominio de Pontas">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.robinwitzner.dk/ddp_rose.html">
+    <meta property="og:image" content="http://robinwitzner.dk/images/cvr.jpg">
+    <meta property="og:description" content="Rødvin, hvidvin eller rosévin, Dominio de Pontas vin til enhver lejlighed. Læs mere om vores spændende spanske vine her.">
+    <meta property="og:locale" content="da_DK">
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/ddp.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
@@ -23,7 +29,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <!-- i <body> har man alt indhold på siden -->
-<body>
+<body id="body_rose">
     <header class="rose_cvr" data-parallax="scroll" data-image-src="images/cvr3.jpg">
         <div class="logo_box">
             <img class="logo_mbl" src="images/ddp_logo_mbl.png">
@@ -38,8 +44,8 @@
             </div>
         </nav>
     </header>
-    <section id="grid2">
-        <div id="rose_pop_box">
+    <article id="grid2">
+        <section id="rose_pop_box">
             <h1>
                 Rosévin
             </h1>
@@ -47,9 +53,9 @@
                 Garnacha druen er med god grund populær til produktion af rosevin.
                 Den er også kendt under det franske navn Grenache, og stammer oprindeligt fra Navarra regionen.
             </p>
-        </div>
+        </section>
         <div id="rose_zoom_1" class="rose_zoom"></div>
-        <div id="rose_info_box_1" class="rose_info_box">
+        <section id="rose_info_box_1" class="rose_info_box">
             <h2>
                 Om vinen
             </h2>
@@ -59,9 +65,9 @@
                 frugtige smag særdeles velegnet til en romantisk picnic med ens partner,
                 eller til en afslappet aften på terrassen eller på stranden i selskab med familie og venner.
             </p>
-        </div>
+        </section>
         <div id="rose_zoom_2" class="rose_zoom"></div>
-        <div id="rose_info_box_2" class="rose_info_box">
+        <section id="rose_info_box_2" class="rose_info_box">
             <h2>
                 Lagring
             </h2>
@@ -71,9 +77,9 @@
                 Efter fadlagring lagrer vi vores rosévin på flaske i 2 år.
                 Dette betyder at den er på sit højdepunkt når du finder den i butikken.
             </p>
-        </div>
+        </section>
         <div id="rose_zoom_3" class="rose_zoom"></div>
-        <div id="rose_info_box_3" class="rose_info_box">
+        <section id="rose_info_box_3" class="rose_info_box">
             <h2>
                 Mad
             </h2>
@@ -84,9 +90,9 @@
                 frugtige smag ikke overvælder smagsløgene. Retter baseret på pasta, fisk eller tapas,
                 men også mørbrad retter lavet med svinemørbrad går godt sammen med en let rosévin.
             </p>
-        </div>
-    </section>
-    <div id="ftr">
+        </section>
+    </article>
+    <footer id="ftr">
         <a href="https://www.facebook.com/">
             <i class="fab fa-facebook-square fa-3x"></i>
         </a>
@@ -99,7 +105,7 @@
         <a id="topRose">
             <i class="fas fa-arrow-up fa-3x"></i>
         </a>
-    </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="parallax.js-1.5.0/parallax.js"></script>
     <script>
