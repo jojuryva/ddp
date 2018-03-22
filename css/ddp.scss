@@ -29,6 +29,7 @@ $blue: #3b9ad5;
 }
 
 body {
+  background-color: $red;
   margin: 0; // Ingen kanter i siden af browser
   font-family: Montserrat, sans-serif;
   color: white;
@@ -427,7 +428,7 @@ img {
   padding: 40% 20%;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   a {
     margin: 5%;

@@ -317,7 +317,7 @@ img {
   padding: 40% 20%;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-around; }
   #ftr a {
     margin: 5%;
     width: 50px;
