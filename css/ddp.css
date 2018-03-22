@@ -214,40 +214,45 @@ img {
   background-color: #6d2851;
   padding: 25% 10%; }
   #red_pop_box h1, .red_info_box h1 {
-    font-size: 32pt; }
-  #red_pop_box h2, .red_info_box h2 {
     font-size: 24pt; }
+  #red_pop_box h2, .red_info_box h2 {
+    font-size: 16pt; }
   #red_pop_box p, .red_info_box p {
-    font-size: 16pt;
+    font-size: 12pt;
     margin-top: 5%; }
 
 #white_pop_box, .white_info_box {
   background-color: #f9a24b;
   padding: 25% 10%; }
   #white_pop_box h1, .white_info_box h1 {
-    font-size: 32pt; }
-  #white_pop_box h2, .white_info_box h2 {
     font-size: 24pt; }
+  #white_pop_box h2, .white_info_box h2 {
+    font-size: 16pt; }
   #white_pop_box p, .white_info_box p {
-    font-size: 16pt;
+    font-size: 12pt;
     margin-top: 5%; }
 
 #rose_pop_box, .rose_info_box {
   background-color: #3b9ad5;
   padding: 25% 10%; }
   #rose_pop_box h1, .rose_info_box h1 {
-    font-size: 32pt; }
-  #rose_pop_box h2, .rose_info_box h2 {
     font-size: 24pt; }
+  #rose_pop_box h2, .rose_info_box h2 {
+    font-size: 16pt; }
   #rose_pop_box p, .rose_info_box p {
-    font-size: 16pt;
+    font-size: 12pt;
     margin-top: 5%; }
 
 .red_info_box, .white_info_box, .rose_info_box {
   padding: 15% 10%; }
 
 #red_pop_box, #white_pop_box, #rose_pop_box {
+  padding: 15% 10%;
   grid-row: 1/span 1; }
+  #red_pop_box h1, #white_pop_box h1, #rose_pop_box h1 {
+    font-size: 32pt; }
+  #red_pop_box p, #white_pop_box p, #rose_pop_box p {
+    font-size: 16pt; }
 
 #red_zoom_1, #white_zoom_1, #rose_zoom_1 {
   grid-row: 2/span 1; }
@@ -377,6 +382,9 @@ img {
   #red_pop_box p, .red_info_box p, #white_pop_box p, .white_info_box p, #rose_pop_box p, .rose_info_box p {
     font-size: 24pt;
     margin-top: 5%; }
+
+  #red_pop_box p, #white_pop_box p, #rose_pop_box p {
+    font-size: 32pt; }
 
   #ftr {
     height: 768px;
